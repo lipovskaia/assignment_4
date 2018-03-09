@@ -3,10 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Assignment 04</title>
-    <script src="js/01-arrays-practice.js"></script>
-    <!--<script src="js/02-inventory-management.js"></script>-->
+   <!-- <script src="js/01-arrays-practice.js"></script> -->
+    <script src="js/02-inventory-management.js"></script>
+    <style>
+        #inventory_list{
+            margin-top: 0;
+            
+        }
+        label {display:block;}
+textarea { display:block;}
+    </style>
 </head>
 <body>
-    
+    <main>
+    <h1> Inventory Managment</h1>
+        <div id="inventory">
+            <label for="inventory_list">Inventory List</label>
+        <textarea id="inventory_display" rows ="6" cols = "50" > </textarea>
+        </div>
+    <input type = "button" name="view_prdcts" id="view_prdcts" value="View all Products" > <br>
+    <input type = "button" name="update_stck" id="update_stck" value="Update Stock"> <br>
+    <input type = "button" name="exit_prgrm" id="exit_prgrm" value="Exit the Program"> <br>
+    </main>
 </body>
 </html>

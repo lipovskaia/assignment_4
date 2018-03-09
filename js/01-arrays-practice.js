@@ -161,6 +161,7 @@ window.document.write(movies.sort().reverse().shift() );
 
 //STEP 13
 //employeeid, name, title, department, and whether or not the employee is a current employee
+/*
 var employee1 = [];
 employee1["id"] = 1;
 employee1["name"] = "John";
@@ -168,30 +169,42 @@ employee1["title"] = "Manager";
 employee1["department"] = "Entertainment";
 employee1["isCurrent"] = true;
 var employee2 = [];
-employee2["id"] = 1;
-employee2["name"] = "Mark";
-employee2["title"] = "Cashier";
-employee2["department"] = "Sales";
-employee2["isCurrent"] = false;
+employee2["id2"] = 2;
+employee2["name2"] = "Mark";
+employee2["title2"] = "Cashier";
+employee2["department2"] = "Sales";
+employee2["isCurrent2"] = false;
  
 var employees = [];
-employees.push(employee1);
-employees.push(employee2);
+employees = Object.assign([],employee1, employee2 );
 
-window.document.write(employees["name"]);
-/* 
-
+window.document.write(employees[Object.keys(employees)[6]]);
 */
+
+
 //STEP 14
-/* var i;
-var employee1 = [ 1, "John", "Manager", "Entertainment", "Active"];
-var employee2 = [ 2, "Michael", "Cashier", "Sales", "Inactive"];
-var employees; 
-employees =  employee1.concat( employee2);
-for (i = 0; i < employees.length ; i += 1 ) {
-  window.document.write(employees[i] [1] + " " + employees[i] [6] );
-  
-} */ 
+  var employee1 = [];
+employee1["id"] = 1;
+employee1["name"] = "John";
+employee1["title"] = "Manager";
+employee1["department"] = "Entertainment";
+employee1["isCurrent"] = true;
+var employee2 = [];
+employee2["id2"] = 2;
+employee2["name2"] = "Mark";
+employee2["title2"] = "Cashier";
+employee2["department2"] = "Sales";
+employee2["isCurrent2"] = false;
+ 
+var employees = [];
+employees = Object.assign([],employee1, employee2 );
+
+
+
+for ( var names in employees ){
+    names = employees["name"] + " " +  employees["name2"];
+    }
+window.document.write(names);
 
 //STEP 15
 
